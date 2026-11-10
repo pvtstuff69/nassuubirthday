@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Meri Jaan ❤️</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  background: #fff0f4;
+  color: #64263e;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  background: linear-gradient(145deg, #ffb6c9, #fff0f4, #f8c4d7);
+}
+
+.heart {
+  font-size: 65px;
+  animation: beat 1.2s infinite;
+}
+
+@keyframes beat {
+  50% { transform: scale(1.2); }
+}
+
+h1 {
+  font-size: clamp(35px, 8vw, 55px);
+  margin: 18px 0;
+  color: #a32658;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+button {
+  border: none;
+  padding: 14px 28px;
+  margin-top: 25px;
+  border-radius: 30px;
+  background: #b52e65;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #8d1948;
+  transform: translateY(-2px);
+}
+
+#surprise {
+  display: none;
+  padding: 35px 18px;
+  animation: appear 1.2s ease;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.section {
+  max-width: 850px;
+  margin: 35px auto;
+  padding: 25px 18px;
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 5px 25px #a3265815;
+}
+
+.section h2 {
+  color: #b52e65;
+  margin-bottom: 18px;
+  font-size: 26px;
+}
+
+.message {
+  font-size: 17px;
+  line-height: 2;
+  white-space: pre-line;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.gallery img:first-child {
+  grid-column: span 2;
+  height: 320px;
+}
+
+.love {
+  font-size: 30px;
+  color: #d63370;
+  margin: 18px;
+}
+
+footer {
+  padding: 35px 15px;
+  color: #a32658;
+  font-size: 17px;
+}
+
+.heart-float {
+  position: fixed;
+  bottom: -30px;
+  font-size: 22px;
+  pointer-events: none;
+  animation: floatUp 6s linear forwards;
+  z-index: 10;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .gallery img { height: 180px; }
+  .gallery img:first-child { height: 260px; }
+  .section { padding: 22px 14px; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- WELCOME SCREEN -->
+
+<div class="hero" id="welcome">
+
+  <div class="heart">❤️</div>
+
+  <h1>Happy Birthday Meri Jaan!</h1>
+
+  <p>
+    Aaj ka din bahut special hai... 🥹<br>
+    Kyunki aaj meri favourite person ka birthday hai! ❤️<br>
+    Tumhare liye ek chhota sa surprise hai.
+  </p>
+
+  <button onclick="openSurprise()">
+    Yahan Click Karo Meri Jaan 💌
+  </button>
+
+</div>
+
+
+<!-- MAIN SURPRISE -->
+
+<div id="surprise">
+
+  <div class="heart">💗</div>
+
+  <h1>Happy Birthday Nasu! 🎂</h1>
+
+  <p class="message">
+    Meri sabse pyaari ladki ke liye... 🥰
+
+    Aaj ka din sirf tumhara hai,
+    aur meri taraf se tumhare liye dher saara pyaar! ❤️
+  </p>
+
+
+  <!-- PHOTO GALLERY -->
+
+  <div class="section">
+
+    <h2>Hamari Pyaari Memories 📸</h2>
+
+    <div class="gallery">
+
+      <img src="photos/photo1.jpg" alt="Memory 1">
+      <img src="photos/photo2.jpg" alt="Memory 2">
+      <img src="photos/photo3.jpg" alt="Memory 3">
+      <img src="photos/photo4.jpg" alt="Memory 4">
+      <img src="photos/photo5.jpg" alt="Memory 5">
+
+    </div>
+
+    <p class="message" style="margin-top:20px">
+      Pata hai, har photo apne aap mein special hai,
+      lekin meri favourite memory woh hai
+      jisme tumhari smile hoti hai. 🥹❤️
+    </p>
+
+  </div>
+
+
+  <!-- LOVE LETTER -->
+
+  <div class="section">
+
+    <h2>Dil Se Kuch Baatein... 💌</h2>
+
+    <div class="message">
+Meri Pyaari Nasu ❤️
+
+Sabse pehle toh Happy Birthday meri jaan! 🥹
+
+Pata nahi kaise express karun ki tum mere liye
+kitni special ho.
+
+Tumse baat karna, tumhari smile dekhna,
+tumhara gussa karna aur phir pyaar se baat karna...
+
+Ye sab meri life ki sabse pyaari cheezein hain. ❤️
+
+Kabhi-kabhi sochta hoon ki kitna lucky hoon main
+ki tum meri life mein ho.
+
+Main chahta hoon ki tumhari life mein kabhi
+khushiyon ki kami na ho.
+
+Tumhari har wish poori ho,
+tumhare saare dreams complete hon,
+aur tum hamesha aise hi smile karti raho.
+
+Kaash aaj main tumhare paas hota,
+tumhe tight hug karta aur sabse pehle
+tumhe birthday wish karta. 🫂
+
+Ek promise hai tumse...
+
+Chahe life mein kitne bhi ups and downs aayein,
+main hamesha tumhara saath dena chahta hoon.
+
+I Love You So Much Meri Jaan! ❤️
+
+Tumhara hi,
+Your Future Husband 🥹
+    </div>
+
+  </div>
+
+
+  <!-- SPECIAL MESSAGE -->
+
+  <div class="section">
+
+    <h2>Ek Chhoti Si Wish... 🥺</h2>
+
+    <p class="message">
+      Meri bas itni si wish hai...
+
+      Tumhari life ka har birthday
+      mere saath celebrate ho.
+
+      Har saal tumhare chehre par
+      ye pyaari si smile ho.
+
+      Aur har baar tumhe ye feel ho
+      ki koi hai jo tumse beintehaa pyaar karta hai.
+
+      Woh koi aur nahi... MAIN HOON! ❤️
+
+    </p>
+
+    <div class="love">
+      I LOVE YOU FOREVER ♾️❤️
+    </div>
+
+  </div>
+
+
+  <!-- FINAL SURPRISE -->
+
+  <div class="section">
+
+    <h2>And Finally... 🫶</h2>
+
+    <p class="message">
+      Tum meri favourite notification ho,
+      meri favourite person ho,
+      aur meri favourite feeling bhi.
+
+      Bas aise hi hamesha meri rehna. ❤️
+
+      Once Again...
+
+      HAPPY BIRTHDAY MERI JAAN! 🎂😘
+    </p>
+
+  </div>
+
+
+  <footer>
+    Sirf Tumhare Liye, Mere Dil Se ❤️
+    <br><br>
+    Made With Love By Your Future Husband ♾️
+  </footer>
+
+</div>
+
+
+<script>
+
+function openSurprise() {
+
+  document.getElementById("welcome").style.display = "none";
+
+  document.getElementById("surprise").style.display = "block";
+
+  window.scrollTo(0, 0);
+
+  createHearts();
+
+}
+
+function createHearts() {
+
+  setInterval(() => {
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart-float";
+
+    heart.innerHTML = ["❤️", "💕", "💗", "💖"][
+      Math.floor(Math.random() * 4)
+    ];
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 6000);
+
+  }, 600);
+
+}
+
+</script>
+
+</body>
+</html>
